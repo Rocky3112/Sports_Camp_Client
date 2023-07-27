@@ -45,6 +45,9 @@ const Navbar = () => {
               <li>
                 <Link to="/">Enrolled Classes</Link>
               </li>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
               
             </ul>
           </div>
@@ -61,7 +64,10 @@ const Navbar = () => {
                 <Link to="/classes">Classes</Link>
               </li>
               <li>
-                <Link to="/">Enrolled Classes</Link>
+                <Link to="/enrolled-classes">Enrolled Classes</Link>
+              </li>
+              <li>
+                <Link to="/login">Login</Link>
               </li>
             
           </ul>
