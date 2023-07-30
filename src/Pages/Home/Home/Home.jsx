@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import InstractorsPage from "../InstractorsPage/InstractorsPage";
 import PopularClasses from "../PopularClasses/PopularClasses";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <PopularClasses></PopularClasses>
+            <InstractorsPage></InstractorsPage>
         </div>
     );
 };

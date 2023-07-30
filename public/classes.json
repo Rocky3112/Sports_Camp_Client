@@ -1,83 +1,112 @@
 [
-    {
-      "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
-      "name": "Football Camp",
-      "email": "footballcamp@example.com",
-      "phone": "+1 (555) 123-4567",
-      "details": "Join our exciting football camp and learn from experienced coaches. Improve your skills, make new friends, and have a blast on the field! Open to players of all skill levels.",
-      "category": "popular"
-    },
-    {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOQkygRIWWAQ8YbBNV5HyPyN7IrA7diwBKw&usqp=CAU",
-      "name": "Tennis Clinic",
-      "email": "tennisclinic@example.com",
-      "phone": "+1 (555) 987-6543",
-      "details": "Serve, volley, and smash your way to success at our Tennis Clinic. Our expert coaches will help you refine your technique and take your game to the next level.",
-      "category": "regular"
-    },
-    {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXA9lIZ_jbSbLozUmBccubfaSBhZ_6lZvdA&usqp=CAU",
-      "name": "Swim Camp",
-      "email": "swimcamp@example.com",
-      "phone": "+1 (555) 111-2222",
-      "details": "Dive into the world of swimming at our Swim Camp. Whether you're a beginner or an experienced swimmer, our coaches will guide you in perfecting your strokes and building endurance.",
-      "category": "popular"
-    },
-    {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pEPifi9ZPSjztGVMGTwbo2navIGwyTurcQ&usqp=CAU",
-      "name": "Basketball Academy",
-      "email": "basketballacademy@example.com",
-      "phone": "+1 (555) 333-4444",
-      "details": "Shoot, dribble, and slam dunk at our Basketball Academy. Learn from top-notch coaches and take part in friendly matches. All skill levels are welcome!",
-      "category": "popular"
-    },
-    {
-      "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
-      "name": "Soccer School",
-      "email": "soccerschool@example.com",
-      "phone": "+1 (555) 666-7777",
-      "details": "Kick off your soccer journey with us! Our Soccer School focuses on fundamental skills, teamwork, and fun. Experienced coaches will help you develop your talent.",
-      "category": "regular"
-    },
-    {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pEPifi9ZPSjztGVMGTwbo2navIGwyTurcQ&usqp=CAU",
-      "name": "Volleyball Camp",
-      "email": "volleyballcamp@example.com",
-      "phone": "+1 (555) 888-9999",
-      "details": "Bump, set, and spike your way to victory at our Volleyball Camp. Join us for a fantastic time, improve your game, and make lasting memories with fellow volleyball enthusiasts.",
-      "category": "popular"
-    },
-    {
-      "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
-      "name": "Gymnastics Workshop",
-      "email": "gymnasticsworkshop@example.com",
-      "phone": "+1 (555) 222-3333",
-      "details": "Tumble, flip, and soar at our Gymnastics Workshop. Whether you're a beginner or an aspiring gymnast, our experienced instructors will guide you in mastering the art of gymnastics.",
-      "category": "regular"
-    },
-    {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4_0aTviPDChskNdLOUL6nGgpsspovLRs0g&usqp=CAU",
-      "name": "Hockey Training",
-      "email": "hockeytraining@example.com",
-      "phone": "+1 (555) 444-5555",
-      "details": "Get ready to hit the ice with our Hockey Training program. Learn essential skills, hockey strategies, and teamwork while having a blast with your teammates.",
-      "category": "popular"
-    },
-    {
-      "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
-      "name": "Athletics Camp",
-      "email": "athleticscamp@example.com",
-      "phone": "+1 (555) 777-8888",
-      "details": "Run, jump, and throw at our Athletics Camp. Discover your athletic potential and compete in various track and field events under the guidance of experienced coaches.",
-      "category": "regular"
-    },
-    {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdNUUbJmR5RN--dDT8iSeculF3gxb9wrN0Q&usqp=CAU",
-      "name": "Cricket Academy",
-      "email": "cricketacademy@example.com",
-      "phone": "+1 (555) 999-0000",
-      "details": "Experience the thrill of cricket at our Cricket Academy. From batting to bowling, our coaches will help you hone your skills and understand the nuances of the game.",
-      "category": "popular"
-    }
-  ]
-  
+  {
+    "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
+    "name": "Football Camp",
+    "email": "footballcamp@example.com",
+    "phone": "+1 (555) 123-4567",
+    "details": "Join our exciting football camp and learn from experienced coaches. Improve your skills, make new friends, and have a blast on the field! Open to players of all skill levels.",
+    "category": "popular",
+    "instructor": "John Smith",
+    "seats": 20,
+    "price": "$200"
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOQkygRIWWAQ8YbBNV5HyPyN7IrA7diwBKw&usqp=CAU",
+    "name": "Tennis Clinic",
+    "email": "tennisclinic@example.com",
+    "phone": "+1 (555) 987-6543",
+    "details": "Serve, volley, and smash your way to success at our Tennis Clinic. Our expert coaches will help you refine your technique and take your game to the next level.",
+    "category": "regular",
+    "instructor": "Emily Johnson",
+    "seats": 15,
+    "price": "$150"
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXA9lIZ_jbSbLozUmBccubfaSBhZ_6lZvdA&usqp=CAU",
+    "name": "Swim Camp",
+    "email": "swimcamp@example.com",
+    "phone": "+1 (555) 111-2222",
+    "details": "Dive into the world of swimming at our Swim Camp. Whether you're a beginner or an experienced swimmer, our coaches will guide you in perfecting your strokes and building endurance.",
+    "category": "popular",
+    "instructor": "Michael Brown",
+    "seats": 25,
+    "price": "$180"
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pEPifi9ZPSjztGVMGTwbo2navIGwyTurcQ&usqp=CAU",
+    "name": "Basketball Academy",
+    "email": "basketballacademy@example.com",
+    "phone": "+1 (555) 333-4444",
+    "details": "Shoot, dribble, and slam dunk at our Basketball Academy. Learn from top-notch coaches and take part in friendly matches. All skill levels are welcome!",
+    "category": "popular",
+    "instructor": "Sarah Davis",
+    "seats": 18,
+    "price": "$170"
+  },
+  {
+    "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
+    "name": "Soccer School",
+    "email": "soccerschool@example.com",
+    "phone": "+1 (555) 666-7777",
+    "details": "Kick off your soccer journey with us! Our Soccer School focuses on fundamental skills, teamwork, and fun. Experienced coaches will help you develop your talent.",
+    "category": "regular",
+    "instructor": "David Lee",
+    "seats": 30,
+    "price": "$190"
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pEPifi9ZPSjztGVMGTwbo2navIGwyTurcQ&usqp=CAU",
+    "name": "Volleyball Camp",
+    "email": "volleyballcamp@example.com",
+    "phone": "+1 (555) 888-9999",
+    "details": "Bump, set, and spike your way to victory at our Volleyball Camp. Join us for a fantastic time, improve your game, and make lasting memories with fellow volleyball enthusiasts.",
+    "category": "popular",
+    "instructor": "Jessica Wilson",
+    "seats": 22,
+    "price": "$160"
+  },
+  {
+    "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
+    "name": "Gymnastics Workshop",
+    "email": "gymnasticsworkshop@example.com",
+    "phone": "+1 (555) 222-3333",
+    "details": "Tumble, flip, and soar at our Gymnastics Workshop. Whether you're a beginner or an aspiring gymnast, our experienced instructors will guide you in mastering the art of gymnastics.",
+    "category": "regular",
+    "instructor": "Alex Harris",
+    "seats": 12,
+    "price": "$140"
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4_0aTviPDChskNdLOUL6nGgpsspovLRs0g&usqp=CAU",
+    "name": "Hockey Training",
+    "email": "hockeytraining@example.com",
+    "phone": "+1 (555) 444-5555",
+    "details": "Get ready to hit the ice with our Hockey Training program. Learn essential skills, hockey strategies, and teamwork while having a blast with your teammates.",
+    "category": "popular",
+    "instructor": "Daniel Martin",
+    "seats": 16,
+    "price": "$175"
+  },
+  {
+    "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
+    "name": "Athletics Camp",
+    "email": "athleticscamp@example.com",
+    "phone": "+1 (555) 777-8888",
+    "details": "Run, jump, and throw at our Athletics Camp. Discover your athletic potential and compete in various track and field events under the guidance of experienced coaches.",
+    "category": "regular",
+    "instructor": "Jennifer Rodriguez",
+    "seats": 24,
+    "price": "$180"
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdNUUbJmR5RN--dDT8iSeculF3gxb9wrN0Q&usqp=CAU",
+    "name": "Cricket Academy",
+    "email": "cricketacademy@example.com",
+    "phone": "+1 (555) 999-0000",
+    "details": "Experience the thrill of cricket at our Cricket Academy. From batting to bowling, our coaches will help you hone your skills and understand the nuances of the game.",
+    "category": "popular",
+    "instructor": "Robert Johnson",
+    "seats": 19,
+    "price": "$190"
+  }
+]
