@@ -7,42 +7,66 @@ import image6 from '../../../assets/images/image6.jpeg'
 const Banner = () => {
   return (
     <>
-      <div className="carousel h-[700px] ">
-        <div id="item1" className="carousel-item w-full">
+      <div className="carousel h-[700px]  ">
+        <div id="item1" className="carousel-item w-full grid">
           <img
             src={image1}
-            className="w-full "
+            className="w-full"
           />
+          <div className="carousel-caption text-center">
+            <h2 className="text-3xl font-semibold ">Cricket Camp</h2>
+            <p className="">Join our exciting Cricket camp and learn from experienced coaches. Improve your skills, make new friends, and have a blast on the field! Open to players of all skill levels.</p>
+          </div>
         </div>
-        <div id="item2" className="carousel-item w-full">
+        <div id="item2" className="carousel-item w-full grid">
           <img
             src={image2}
             className="w-full"
           />
+          <div className="carousel-caption text-center">
+            <h2 className="text-3xl font-semibold ">Football Camp</h2>
+            <p className="">Serve, volley, and smash your way to success at our Football Camp. Our expert coaches will help you refine your technique and take your game to the next level.</p>
+          </div>
         </div>
-        <div id="item3" className="carousel-item w-full">
+        <div id="item3" className="carousel-item w-full grid">
           <img
             src={image3}
             className="w-full"
           />
+          <div className="carousel-caption text-center">
+            <h2 className="text-3xl font-semibold ">Volly Camp</h2>
+            <p className="">Serve, volley, and smash your way to success at our Volly Camp. Our expert coaches will help you refine your technique and take your game to the next level.</p>
+          </div>
         </div>
-        <div id="item4" className="carousel-item w-full">
+        <div id="item4" className="carousel-item w-full grid">
           <img
             src={image4}
             className="w-full"
           />
+          <div className="carousel-caption text-center ">
+            <h2 className="text-3xl font-semibold ">Football Camp</h2>
+            <p className="">Serve, volley, and smash your way to success at our Football Camp. Our expert coaches will help you refine your technique and take your game to the next level.</p>
+          </div>
         </div>
-        <div id="item5" className="carousel-item w-full">
+        <div id="item5" className="carousel-item w-full grid">
           <img
             src={image5}
             className="w-full"
           />
+          <div className="carousel-caption text-center ">
+            <h2 className="text-3xl font-semibold ">Football Camp</h2>
+            <p className="">Serve, volley, and smash your way to success at our Football Camp. Our expert coaches will help you refine your technique and take your game to the next level.</p>
+          </div>
         </div>
-        <div id="item6" className="carousel-item w-full">
+        <div id="item6" className="carousel-item w-full grid">
           <img
             src={image6}
             className="w-full"
           />
+          <div className="carousel-caption text-center ">
+            <h2 className="text-3xl font-semibold ">Football Camp</h2>
+            <p className="">Serve, volley, and smash your way to success at our Football Camp. Our expert coaches will help you refine your technique and take your game to the next level.</p>
+          </div>
         </div>
       </div>
       <div className="flex justify-center w-full py-2 gap-2">
