@@ -1,16 +1,18 @@
 
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 // import { FaShoppingCart } from 'react-icons/fa';
 
 
 const Navbar = () => {
-//   const { user, logOut } = useContext(AuthContext);
-//   const handleLogOut = () => {
-//     logOut()
-//       .then(() => {})
-//       .catch((error) => console.log(error));
-//   };
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
   return (
     <div>
       <div className="navbar fixed bg-opacity-30 z-10 text-white bg-black max-w-screen-xl mx-auto">
@@ -36,19 +38,33 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
+             <li>
                 <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/classes">Classes</Link>
               </li>
               <li>
-                <Link to="/">Enrolled Classes</Link>
+                <Link to="/instractors">Instractors</Link>
               </li>
               <li>
-                <Link to="/login">Login</Link>
+                <Link to="/allClasses">All Classes</Link>
               </li>
-              
+              {user ? (
+                <>
+                  <img className=" h-10 rounded-full" src={user?.photoURL} alt="" />
+                  <button onClick={handleLogOut} className="btn btn-ghost">
+                    Log-Out
+                  </button>
+                </>
+              ) : (
+                <>
+                  <li>
+                    <Link to="login">Login</Link>
+                  </li>
+                </>
+              )}
+            
             </ul>
           </div>
           <a className="btn btn-ghost text-3xl">
@@ -69,14 +85,25 @@ const Navbar = () => {
               <li>
                 <Link to="/allClasses">All Classes</Link>
               </li>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
+              {user ? (
+                <>
+                  <img className=" h-10 rounded-full" src={user?.photoURL} alt="" />
+                  <button onClick={handleLogOut} className="btn btn-ghost">
+                    Log-Out
+                  </button>
+                </>
+              ) : (
+                <>
+                  <li>
+                    <Link to="login">Login</Link>
+                  </li>
+                </>
+              )}
             
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn btn-outline border-white text-white hover:bg-white hover:text-black">Button</a>
         </div>
       </div>
     </div>

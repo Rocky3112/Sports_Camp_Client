@@ -1,11 +1,14 @@
 /* eslint-disable react/prop-types */
 
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { app } from "../firebase/firebase.config";
 import {
+  GoogleAuthProvider,
   createUserWithEmailAndPassword,
   getAuth,
+  onAuthStateChanged,
   signInWithEmailAndPassword,
+  signInWithPopup,
   signOut,
 } from "firebase/auth";
 
@@ -30,12 +33,30 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
+  const googleProvider = new GoogleAuthProvider();
+  const googleSignIn = () => {
+    setLoading(true);
+    return signInWithPopup(auth, googleProvider);
+  };
+  //observe auth change
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      console.log("auth state change", currentUser);
+      setUser(currentUser);
+      setLoading(false);
+    });
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
   const authInfo = {
     user,
     createUser,
     loading,
     signIn,
     logOut,
+    googleSignIn,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

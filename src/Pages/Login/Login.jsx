@@ -6,6 +6,7 @@ import { useForm, Controller } from 'react-hook-form';
 import { AuthContext } from '../../Providers/AuthProvider';
 import login from '../../assets/login.png';
 import { FiEye, FiEyeOff } from 'react-icons/fi'; // Using Feather Icons as an example, you can choose a different icon library
+import SocialLogin from '../../components/SocialLogin/SocialLogin';
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
@@ -107,7 +108,9 @@ const Login = () => {
                                 New Here? <Link to="/signup">Create an account</Link>
                             </small>
                         </p>
+                        <SocialLogin></SocialLogin>
                     </div>
+
                 </div>
             </div>
         </>
