@@ -7,6 +7,9 @@ import Instractors from "../Pages/Instractors/Instractors";
 import AllClasses from "../Pages/AllClasses/AllClasses";
 import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../Layout/Dashboard";
+import AdminRoute from "./AdminRoute";
+import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
+import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
 
 export const router = createBrowserRouter([
   {
@@ -40,7 +43,12 @@ export const router = createBrowserRouter([
     element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
     children:[
       {
-
+        path: "adminhome",
+        element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
+      },
+      {
+        path: "allusers",
+        element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
       },
     ]
   }

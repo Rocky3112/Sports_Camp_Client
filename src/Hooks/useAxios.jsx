@@ -15,9 +15,9 @@ const useAxios = () => {
  
   useEffect(() => {
     axiosSecure.interceptors.request.use((config) => {
-      const getToken = localStorage.getItem('Get-token');
-      if (getToken) {
-        config.headers.Authorization = `Bearer ${getToken}`;
+      const token = localStorage.getItem('access-token');
+      if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
       }
       return config;
     });

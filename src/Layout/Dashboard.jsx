@@ -1,12 +1,12 @@
 
 import { Link, Outlet } from 'react-router-dom';
-import useAdmin from '../../Hooks/useAdmin';
 import { useContext } from 'react';
 import { AuthContext } from '../Providers/AuthProvider';
+import useAdmin from '../Hooks/useAdmin';
 
 const Dashboard = () => {
-    const [user] = useContext(AuthContext);
-    const [admin] = useAdmin(user);
+    const {user} = useContext(AuthContext);
+    const [isAdmin] = useAdmin(user);
     return (
         <div>
             <div className="drawer drawer-mobile">
@@ -19,11 +19,11 @@ const Dashboard = () => {
                     <ul className="menu p-4 overflow-y-auto w-80 bg-base-300 rounded-md text-base-content">
                         {/* <!-- Sidebar content here --> */}
                         <li><Link to='/dashboard'>My Profile</Link></li>
-                        {!admin && <>
+                        {!isAdmin && <>
                             <li><Link to='/dashboard/myOrders'>My Orders</Link></li>
                             <li><Link to='/dashboard/addreview'>Add a Review</Link></li>
                         </>}
-                        {admin && <>
+                        {isAdmin && <>
                             <li><Link to='/dashboard/addProduct'>Add Product</Link></li>
                             <li><Link to='/dashboard/manageProducts'>Manage Products</Link></li>
                             <li><Link to='/dashboard/manageOrders'>Manage All Orders</Link></li>
