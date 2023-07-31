@@ -1,12 +1,10 @@
 
-import { Link, Outlet } from 'react-router-dom';
-import { useContext } from 'react';
-import { AuthContext } from '../Providers/AuthProvider';
+import { Link, Outlet } from 'react-router-dom'
 import useAdmin from '../Hooks/useAdmin';
 
 const Dashboard = () => {
-    const {user} = useContext(AuthContext);
-    const [isAdmin] = useAdmin(user);
+    // const {user} = useContext(AuthContext);
+    const [isAdmin] = useAdmin();
     return (
         <div>
             <div className="drawer drawer-mobile">
