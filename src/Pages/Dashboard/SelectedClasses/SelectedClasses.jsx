@@ -44,7 +44,7 @@ const SelectedClasses = () => {
     return (
         <div className="w-full bg-slate-100">
             <Helmet>
-                <title>Bistro Boss | Selected Class</title>
+                <title>Sports Camp | Selected Class</title>
             </Helmet>
             <div className="uppercase font-semibold h-[60px] flex justify-evenly items-center">
                 <h3 className="text-3xl">Total Items: {select.length}</h3>
