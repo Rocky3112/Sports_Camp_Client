@@ -83,7 +83,7 @@ const Navbar = () => {
                 <Link to="/allClasses">All Classes</Link>
               </li>
               <li>
-                <Link to='/dashboard'>Dashboard</Link>
+                <Link to='/dashboard/adminhome'>Dashboard</Link>
               </li>
               {user ? (
                 <>
