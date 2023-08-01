@@ -26,20 +26,42 @@ const SelectedClasses = () => {
                 <button className="btn btn-outline hover:btn-warning ">PAY</button>
                 </Link>
             </div>
-            <div className="overflow-x-auto w-full">
+            <div className="overflow-x-auto w-full m-12">
                 <table className="table w-full">
                     {/* head */}
                     <thead>
-                        <tr>
+                        <tr className=" text-center text-xl font-semibold">
                             <th>#</th>
                             <th>class</th>
                             <th>class Name</th>
-                            <th>Price</th>
+                            <th className=" text-end">Price</th>
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody>
-                       
+                    <tbody className=" text-center">
+                        {
+                            select.map((cls, index) => <tr
+                                key={cls._id}
+                            >
+                                <td>
+                                    {index + 1}
+                                </td>
+                                <td>
+                                    <div className="avatar">
+                                        <div className="mask mask-squircle w-14 h-30">
+                                            <img src={cls.image} alt="Avatar Tailwind CSS Component" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className=" text-lg">
+                                    {cls.name}
+                                </td>
+                                <td className="text-end text-xl">${cls.price}</td>
+                                <td>
+                                    <button onClick={() => handleDelete(cls)} className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt></button>
+                                </td>
+                            </tr>)
+                        }
 
 
                     </tbody>
