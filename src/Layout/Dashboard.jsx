@@ -1,17 +1,15 @@
 import { NavLink, Outlet } from "react-router-dom";
 import {
-  
-  FaWallet,
-  FaCalendarAlt,
   FaHome,
   FaUsers,
-  FaUser
+  FaUser,
+  
 } from "react-icons/fa";
 import useAdmin from "../Hooks/useAdmin";
 
 
 const Dashboard = () => {
-  // const isAdmin = true;
+
   const [isAdmin]=useAdmin();
  
   return (
@@ -30,8 +28,8 @@ const Dashboard = () => {
         <div className="drawer-side">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 h-full bg-slate-300">
-            {/* Sidebar content here */}
-            {isAdmin ? (
+            {
+            isAdmin ? (
               <>
                 <li>
                   <NavLink to="/dashboard/adminhome">
@@ -62,7 +60,7 @@ const Dashboard = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/dashboard/history">
+                  <NavLink to="/">
                      Enrolled Classes
                   </NavLink>
                 </li>
@@ -73,7 +71,7 @@ const Dashboard = () => {
             <li>
               <NavLink to="/">
                 <FaHome></FaHome> Home
-              </NavLink>{" "}
+              </NavLink>
             </li>
             <li>
               <NavLink to="/allClasses"><FaUser></FaUser>All classes</NavLink>
