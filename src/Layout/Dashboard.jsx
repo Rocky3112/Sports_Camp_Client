@@ -3,7 +3,8 @@ import {
   FaHome,
   FaUsers,
   FaUser,
-  
+  FaCheckSquare,
+  FaMoneyCheckAlt
 } from "react-icons/fa";
 import useAdmin from "../Hooks/useAdmin";
 
@@ -56,12 +57,12 @@ const Dashboard = () => {
                 </li>
                 <li>
                   <NavLink to="/dashboard/selectedClasses">
-                     Selected Classes
+                    <FaCheckSquare></FaCheckSquare> Selected Classes
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/">
-                     Enrolled Classes
+                   <FaMoneyCheckAlt></FaMoneyCheckAlt>Enrolled Classes
                   </NavLink>
                 </li>
               </>
