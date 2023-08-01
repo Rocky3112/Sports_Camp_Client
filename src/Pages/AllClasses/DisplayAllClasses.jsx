@@ -19,7 +19,7 @@ const DisplayAllClasses = ({cls}) => {
       console.log(cls);
       if(user && user.email){
         const selectClass ={selectClassId: _id, name,price,image, email:user.email}
-        fetch('http://localhost:5000/selects',{
+        fetch('https://sports-camp-server-lemon.vercel.app/selects',{
           method:'POST',
           headers:{
             'content-type':'application/json'
