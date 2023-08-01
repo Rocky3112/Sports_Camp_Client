@@ -11,6 +11,7 @@ import AdminRoute from "./AdminRoute";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
 import UserHome from "../Pages/Dashboard/UserHome/UserHome";
+import SelectedClasses from "../Pages/Dashboard/SelectedClasses/SelectedClasses";
 
 export const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
     path: "dashboard",
     element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
     children:[
+      {
+        path: "selectedClasses",
+        element: <SelectedClasses></SelectedClasses>
+      },
       {
         path: "userhome",
         element: <UserHome></UserHome>

@@ -8,7 +8,7 @@
     "category": "popular",
     "instructor": "John Smith",
     "seats": 20,
-    "price": "$200"
+    "price": 200
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOQkygRIWWAQ8YbBNV5HyPyN7IrA7diwBKw&usqp=CAU",
@@ -19,7 +19,7 @@
     "category": "regular",
     "instructor": "Emily Johnson",
     "seats": 15,
-    "price": "$150"
+    "price": 150
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXA9lIZ_jbSbLozUmBccubfaSBhZ_6lZvdA&usqp=CAU",
@@ -30,7 +30,7 @@
     "category": "popular",
     "instructor": "Michael Brown",
     "seats": 25,
-    "price": "$180"
+    "price": 180
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pEPifi9ZPSjztGVMGTwbo2navIGwyTurcQ&usqp=CAU",
@@ -41,7 +41,7 @@
     "category": "popular",
     "instructor": "Sarah Davis",
     "seats": 18,
-    "price": "$170"
+    "price": 170
   },
   {
     "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
@@ -52,7 +52,7 @@
     "category": "regular",
     "instructor": "David Lee",
     "seats": 30,
-    "price": "$190"
+    "price": 190
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pEPifi9ZPSjztGVMGTwbo2navIGwyTurcQ&usqp=CAU",
@@ -63,7 +63,7 @@
     "category": "popular",
     "instructor": "Jessica Wilson",
     "seats": 22,
-    "price": "$160"
+    "price": 160
   },
   {
     "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
@@ -74,7 +74,7 @@
     "category": "regular",
     "instructor": "Alex Harris",
     "seats": 12,
-    "price": "$140"
+    "price": 140
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4_0aTviPDChskNdLOUL6nGgpsspovLRs0g&usqp=CAU",
@@ -85,7 +85,7 @@
     "category": "popular",
     "instructor": "Daniel Martin",
     "seats": 16,
-    "price": "$175"
+    "price": 175
   },
   {
     "image": "https://soccercampsinternational.com/wp-content/uploads/2020/11/New_International_Blog_Photo-1.jpg",
@@ -96,7 +96,7 @@
     "category": "regular",
     "instructor": "Jennifer Rodriguez",
     "seats": 24,
-    "price": "$180"
+    "price": 180
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdNUUbJmR5RN--dDT8iSeculF3gxb9wrN0Q&usqp=CAU",
@@ -107,6 +107,6 @@
     "category": "popular",
     "instructor": "Robert Johnson",
     "seats": 19,
-    "price": "$190"
+    "price": 190
   }
 ]
