@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 const DisplayPopular = ({ item }) => {
-  console.log(item);
+  // console.log(item);
   const { name, image, phone, email, details } = item;
   return (
     <div className="">

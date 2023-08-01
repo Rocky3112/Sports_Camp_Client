@@ -2,12 +2,15 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import useAdmin from "../../Hooks/useAdmin";
 
 // import { FaShoppingCart } from 'react-icons/fa';
 
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  console.log(user);
+  const [isAdmin] = useAdmin()
   const handleLogOut = () => {
     logOut()
       .then(() => {})
@@ -47,9 +50,14 @@ const Navbar = () => {
               <li>
                 <Link to="/allClasses">All Classes</Link>
               </li>
+              {
+                isAdmin ? <li>
+                <Link to='/dashboard/adminhome'>Dashboard</Link>
+              </li> :
               <li>
-                <Link to='/dashboard'>Dashboard</Link>
-              </li>
+              <Link to='/dashboard/userhome' >Dashboard</Link>
+            </li>
+              }
               {user ? (
                 <>
                   <img className=" h-10 rounded-full" src={user?.photoURL} alt="" />
@@ -82,9 +90,14 @@ const Navbar = () => {
               <li>
                 <Link to="/allClasses">All Classes</Link>
               </li>
-              <li>
+              {
+                isAdmin ? <li>
                 <Link to='/dashboard/adminhome'>Dashboard</Link>
-              </li>
+              </li> :
+              <li>
+              <Link to='/dashboard/userhome' >Dashboard</Link>
+            </li>
+              }
               {user ? (
                 <>
                   <img className=" h-10 rounded-full" src={user?.photoURL} alt="" />

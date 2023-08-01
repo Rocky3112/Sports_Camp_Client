@@ -1,12 +1,11 @@
 import { NavLink, Outlet } from "react-router-dom";
 import {
-  FaShoppingCart,
+  
   FaWallet,
   FaCalendarAlt,
   FaHome,
   FaUsers,
-  FaBook,
-  FaUtensils,
+  FaUser
 } from "react-icons/fa";
 import useAdmin from "../Hooks/useAdmin";
 
@@ -30,7 +29,7 @@ const Dashboard = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-80 h-full bg-yellow-700">
+          <ul className="menu p-4 w-80 h-full bg-slate-300">
             {/* Sidebar content here */}
             {isAdmin ? (
               <>
@@ -40,24 +39,13 @@ const Dashboard = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/dashboard/addItem">
-                    {" "}
-                    <FaUtensils></FaUtensils> Add an Item
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/dashboard/manageitems">
-                    <FaWallet></FaWallet> Manage Items
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/dashboard/history">
-                    <FaBook></FaBook> Manage Bookings
+                  <NavLink to="/dashboard/manageClasses">
+                     <FaUser></FaUser>Manage Classes
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/dashboard/allusers">
-                    <FaUsers></FaUsers> All Users
+                    <FaUsers></FaUsers> Manage Users
                   </NavLink>
                 </li>
               </>
@@ -70,37 +58,29 @@ const Dashboard = () => {
                 </li>
                 <li>
                   <NavLink to="/dashboard/reservations">
-                    <FaCalendarAlt></FaCalendarAlt> Reservations
+                    <FaCalendarAlt></FaCalendarAlt> Selected Classes
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/dashboard/history">
-                    <FaWallet></FaWallet> Payment History
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/dashboard/mycart">
-                    <FaShoppingCart></FaShoppingCart> My Cart
-                    <span className="badge inl badge-secondary">
-                      
-                    </span>
+                    <FaWallet></FaWallet> Enrolled Classes
                   </NavLink>
                 </li>
               </>
             )}
 
-            <div className="divider"></div>
+            <div className="divider text-white"></div>
             <li>
               <NavLink to="/">
                 <FaHome></FaHome> Home
               </NavLink>{" "}
             </li>
             <li>
-              <NavLink to="/menu"> Our Menu</NavLink>
+              <NavLink to="/allClasses">All classes</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/order/salad">Order Food</NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

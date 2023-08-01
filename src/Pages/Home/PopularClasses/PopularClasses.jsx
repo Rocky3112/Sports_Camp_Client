@@ -7,7 +7,7 @@ import DisplayPopular from "./DisplayPopular";
 const PopularClasses = () => {
 
     const [classes] = useClasses()
-    console.log(classes);
+    // console.log(classes);
 
    
     const popular = classes.filter(item=>item.category=== 'popular')

@@ -5,7 +5,7 @@ import { useContext, useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { AuthContext } from '../../Providers/AuthProvider';
 import login from '../../assets/login.png';
-import { FiEye, FiEyeOff } from 'react-icons/fi'; // Using Feather Icons as an example, you can choose a different icon library
+import { FiEye, FiEyeOff } from 'react-icons/fi'; 
 import SocialLogin from '../../components/SocialLogin/SocialLogin';
 
 const Login = () => {
@@ -19,7 +19,7 @@ const Login = () => {
         handleSubmit,
         control,
         formState: { errors },
-    } = useForm();
+    }= useForm();
 
     const [showPassword, setShowPassword] = useState(false);
 
@@ -28,7 +28,7 @@ const Login = () => {
         const password = data.password;
         const result = await signIn(email, password);
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         Swal.fire({
             title: 'User Login Successful.',
             showClass: {

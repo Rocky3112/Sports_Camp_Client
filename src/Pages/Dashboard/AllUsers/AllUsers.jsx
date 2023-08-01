@@ -20,7 +20,7 @@ const AllUsers = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             if(data.modifiedCount){
                 refetch();
                 Swal.fire({
@@ -59,9 +59,9 @@ const AllUsers = () => {
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                                 <td>{ user.role === 'admin' ? 'admin' :
-                                    <button onClick={() => handleMakeAdmin(user)} className="btn btn-ghost bg-orange-600  text-white"><FaUserShield></FaUserShield></button> 
+                                    <button onClick={() => handleMakeAdmin(user)} className="btn  bg-slate-600 hover:bg-orange-600 text-white"><FaUserShield></FaUserShield></button> 
                                     }</td>
-                                <td><button className="btn btn-outline bg-red-700  text-white"><FaTrashAlt></FaTrashAlt></button></td>
+                                <td><button className="btn bg-slate-600 hover:bg-red-700  text-white"><FaTrashAlt></FaTrashAlt></button></td>
                             </tr>)
                         }
                         

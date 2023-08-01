@@ -5,7 +5,7 @@ import DisplayInstractors from "./DisplayInstractors";
 
 const InstractorsPage = () => {
     const [instractors] = useInstractors()
-    console.log(instractors);
+    // console.log(instractors);
 
    
     const popular = instractors.filter(item=>item.category=== 'popular')
