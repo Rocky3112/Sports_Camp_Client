@@ -1,9 +1,11 @@
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
     return (
         <div className='my-12 bg-base-200 p-4 lg:p-12'>
             <h1 className="text-3xl font-bold text-center my-3">Contact</h1>
             <div className='flex flex-col md:flex-row justify-center gap-8 lg:gap-28' >
+                <Fade direction="left" duration={1500}>
                 <div className='card w-80 md:w-96 p-4  hover:bg-base-300'>
                     <div className=''>
                         <h2 className="text-2xl">Phone</h2>
@@ -34,6 +36,8 @@ const Contact = () => {
                         </figure>
                     </div>
                 </div>
+                </Fade>
+                <Fade direction="right" duration={1500}>
                 <div className=' card w-80 md:w-96 p-4 hover:bg-base-300'>
                     <h3 className="text-xl text-center">Email Us</h3>
                     <div className="form-control">
@@ -59,6 +63,7 @@ const Contact = () => {
                     </div>
 
                 </div>
+                </Fade>
             </div>
 
         </div>

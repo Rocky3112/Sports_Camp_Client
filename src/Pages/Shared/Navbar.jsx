@@ -18,7 +18,7 @@ const Navbar = () => {
   };
   return (
     <div>
-      <div className="navbar fixed bg-opacity-30 z-10 text-white bg-black max-w-screen-xl mx-auto">
+      <div className="navbar fixed bg-opacity-50 z-10 font-semibold text-white bg-black max-w-screen-xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -79,8 +79,8 @@ const Navbar = () => {
             Sports <span className=" text-orange-500">Camp</span>
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+        <div className="navbar-center hidden lg:flex ">
+          <ul className="menu menu-horizontal px-1 text-base">
           <li>
                 <Link to="/">Home</Link>
               </li>

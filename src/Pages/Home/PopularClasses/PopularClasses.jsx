@@ -4,6 +4,7 @@ import PartTitle from "../../../components/PartTitle/PartTitle";
 import DisplayPopular from "./DisplayPopular";
 
 
+
 const PopularClasses = () => {
 
     const [classes] = useClasses()
@@ -33,6 +34,7 @@ const PopularClasses = () => {
         <button  className="uppercase btn btn-outline my-3 border-0 border-b-2  mx-auto">View All Classes</button>
         </Link>
         </div>
+    
         </div>
     );
 };
