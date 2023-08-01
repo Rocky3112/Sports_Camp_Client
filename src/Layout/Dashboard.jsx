@@ -58,12 +58,12 @@ const Dashboard = () => {
                 </li>
                 <li>
                   <NavLink to="/dashboard/reservations">
-                    <FaCalendarAlt></FaCalendarAlt> Selected Classes
+                     Selected Classes
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/dashboard/history">
-                    <FaWallet></FaWallet> Enrolled Classes
+                     Enrolled Classes
                   </NavLink>
                 </li>
               </>
@@ -76,7 +76,7 @@ const Dashboard = () => {
               </NavLink>{" "}
             </li>
             <li>
-              <NavLink to="/allClasses">All classes</NavLink>
+              <NavLink to="/allClasses"><FaUser></FaUser>All classes</NavLink>
             </li>
             {/* <li>
               <NavLink to="/order/salad">Order Food</NavLink>

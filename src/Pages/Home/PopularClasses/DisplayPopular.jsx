@@ -16,7 +16,6 @@ const DisplayPopular = ({ item }) => {
           <p>{details}</p>
           <h2>{email}</h2>
           <h2>{phone}</h2>
-          <button className="btn btn-outline ">Enroll Now</button>
         </div>
       </div>
     </div>

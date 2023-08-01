@@ -13,9 +13,9 @@ const AllClasses = () => {
 
         <div className=" grid md:grid-cols-3 gap-4">
             {
-                classes.map(item =><DisplayAllClasses
-                key ={item._id}
-                item ={item}
+                classes.map(cls =><DisplayAllClasses
+                key ={cls._id}
+                cls ={cls}
                 ></DisplayAllClasses>)
             }
         </div>
