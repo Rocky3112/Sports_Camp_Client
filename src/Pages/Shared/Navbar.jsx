@@ -3,12 +3,15 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import useAdmin from "../../Hooks/useAdmin";
+import { FaShoppingCart } from "react-icons/fa";
+import useSelect from "../../Hooks/useSelect";
 
 // import { FaShoppingCart } from 'react-icons/fa';
 
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [select] = useSelect();
   console.log(user);
   const [isAdmin] = useAdmin()
   const handleLogOut = () => {
@@ -58,9 +61,15 @@ const Navbar = () => {
               <Link to='/dashboard/userhome' >Dashboard</Link>
             </li>
               }
+               <Link to="/dashboard/selectedClasses">
+                
+                <FaShoppingCart></FaShoppingCart>
+                <div className="badge badge-secondary px-2">+{select?.length || 0}</div>
+             
+            </Link>
               {user ? (
                 <>
-                  <img className=" h-10 rounded-full" src={user?.photoURL} alt="" />
+                  <img className=" h-10 rounded-full mx-2" src={user?.photoURL} alt="" />
                   <button onClick={handleLogOut} className="btn btn-ghost">
                     Log-Out
                   </button>
@@ -98,9 +107,15 @@ const Navbar = () => {
               <Link to='/dashboard/userhome' >Dashboard</Link>
             </li>
               }
+               <Link to="/dashboard/selectedClasses">
+                
+                <FaShoppingCart></FaShoppingCart>
+                <div className="badge badge-secondary">+{select?.length || 0}</div>
+             
+            </Link>
               {user ? (
                 <>
-                  <img className=" h-10 rounded-full" src={user?.photoURL} alt="" />
+                  <img className=" h-10 rounded-full mx-2" src={user?.photoURL} alt="" />
                   <button onClick={handleLogOut} className="btn btn-ghost">
                     Log-Out
                   </button>
