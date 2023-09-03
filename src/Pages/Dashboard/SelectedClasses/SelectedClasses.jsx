@@ -42,7 +42,7 @@ const SelectedClasses = () => {
           })
       }
     return (
-        <div className="w-full bg-slate-100">
+        <div className="w-full bg-slate-100 px-10">
             <Helmet>
                 <title>Sports Camp | Selected Class</title>
             </Helmet>
