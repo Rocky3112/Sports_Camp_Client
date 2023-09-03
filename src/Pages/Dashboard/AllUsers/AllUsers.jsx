@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 import { useQuery } from "react-query";
 import useAxios from "../../../Hooks/useAxios";
@@ -15,7 +16,7 @@ const AllUsers = () => {
     })
 
     const handleMakeAdmin = user =>{
-        fetch(`https://sports-camp-server-lemon.vercel.app/users/admin/${user._id}`, {
+        fetch(`http://localhost:5000/users/admin/${user._id}`, {
             method: 'PATCH'
         })
         .then(res => res.json())
@@ -33,6 +34,35 @@ const AllUsers = () => {
             }
         })
     }
+
+    const handleDelete=(user)=>{
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+          }).then((result) => {
+           fetch(`http://localhost:5000/users/${user._id}`, {
+            method:'DELETE'
+           })
+           .then(res=>res.json())
+           .then(data=>{
+            if(data.deletedCount > 0){
+                refetch();
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                  )
+            }
+           })
+           
+          })
+      }
+    
 
     return (
         <div className="w-full">
@@ -61,7 +91,7 @@ const AllUsers = () => {
                                 <td>{ user.role === 'admin' ? 'admin' :
                                     <button onClick={() => handleMakeAdmin(user)} className="btn  bg-slate-600 hover:bg-orange-600 text-white"><FaUserShield></FaUserShield></button> 
                                     }</td>
-                                <td><button className="btn bg-slate-600 hover:bg-red-700  text-white"><FaTrashAlt></FaTrashAlt></button></td>
+                                <td><button  onClick={() => handleDelete(user)} className="btn bg-slate-600 hover:bg-red-700  text-white"><FaTrashAlt></FaTrashAlt></button></td>
                             </tr>)
                         }
                         
