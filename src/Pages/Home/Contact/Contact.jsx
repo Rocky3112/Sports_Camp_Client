@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { Fade, Zoom } from 'react-awesome-reveal';
 import Lottie from "lottie-react";
 import contact from '../../../../public/contact.json'
+import PartTitle from '../../../components/PartTitle/PartTitle';
 
 const Contact = () => {
     const form = useRef();
@@ -24,7 +25,7 @@ const Contact = () => {
         <div id='contactMe' className='mt-20 mb-10'>
             <div className=" min-h-screen">
                 <div>
-                   <h3 className="text-4xl font-semibold text-center text-yellow-500 py-3">Contact Info</h3>
+                <PartTitle heading={'Contact Info-'}></PartTitle>
                     <h3 className='text-2xl mx-20'>
                     Let's Connect! Reach out through the Contact Me section to discuss your web development needs, collaborations, or any inquiries. I'm excited to hear from you and explore how we can work together to bring your ideas to life.
                     </h3>

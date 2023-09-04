@@ -2,11 +2,12 @@ import forest from '../../../assets/images/img-1.webp'
 import mountain from '../../../assets/images/img-2.webp'
 import hiking from '../../../assets/images/img-3.webp'
 import kayaking from '../../../assets/images/img-4.webp'
+import PartTitle from '../../../components/PartTitle/PartTitle';
 const PreviousCamp = () => {
     return (
 
         <div className='py-10'>
-            <h2 className=' text-center text-4xl font-bold uppercase py-12'>Our Previous camp</h2>
+           <PartTitle heading={'Our Previous camp'}></PartTitle>
             <div className=' grid md:grid-cols-3 lg:grid-cols-4'>
                 <div className="card w-72 bg-base-100">
                     <figure><img className='rounded-full' src={forest} /></figure>

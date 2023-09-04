@@ -5,6 +5,7 @@ import img3 from '../../../assets/images/guidePic/img-3.webp';
 import image1 from '../../../assets/images/guidePic/subImg-1.webp';
 import image2 from '../../../assets/images/guidePic/subImg-2.webp';
 import image3 from '../../../assets/images/guidePic/subImg-3.webp';
+import PartTitle from '../../../components/PartTitle/PartTitle';
 
 const GuideLine = () => {
     // State to track the currently hovered sub-div
@@ -37,7 +38,7 @@ const GuideLine = () => {
 
     return (
         <div className='py-10'>
-            <h2 className='text-4xl font-bold uppercase py-10 px-10 '>We Offer The Best</h2>
+           <PartTitle heading={'We Offer The Best'}></PartTitle>
         <div className="container grid lg:grid-cols-2 gap-5">
             <div className="first-div">
                 <div
