@@ -6,7 +6,7 @@ const PreviousCamp = () => {
     return (
 
         <div className='py-10'>
-          
+            <h2 className=' text-center text-4xl font-bold uppercase py-12'>Our Previous camp</h2>
             <div className=' grid md:grid-cols-3 lg:grid-cols-4'>
                 <div className="card w-72 bg-base-100">
                     <figure><img className='rounded-full' src={forest} /></figure>
