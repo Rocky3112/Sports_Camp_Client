@@ -5,14 +5,15 @@ import { AuthContext } from '../Providers/AuthProvider';
 
 
 const axiosSecure = axios.create({
-  baseURL: 'https://sports-camp-server-lemon.vercel.app', 
+  // baseURL: 'http://localhost:5000', 
+  baseURL: 'http://localhost:5000',
 });
 
 const useAxios = () => {
-  const { logOut } = useContext(AuthContext) ;
-  const navigate = useNavigate(); 
+  const { logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
 
- 
+
   useEffect(() => {
     axiosSecure.interceptors.request.use((config) => {
       const token = localStorage.getItem('access-token');
