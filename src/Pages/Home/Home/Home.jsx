@@ -1,6 +1,7 @@
 // import Banner from "../Banner/Banner";
 import Bannert from "../Banner/Bannert";
 import Contact from "../Contact/Contact";
+import GuideLine from "../GuideLine/GuideLine";
 import InstractorsPage from "../InstractorsPage/InstractorsPage";
 import PopularClasses from "../PopularClasses/PopularClasses";
 import PreviousCamp from "../PreviousCamp/PreviousCamp";
@@ -13,6 +14,7 @@ const Home = () => {
             <PreviousCamp></PreviousCamp>
             <PopularClasses></PopularClasses>
             <InstractorsPage></InstractorsPage>
+            <GuideLine></GuideLine>
             <Contact></Contact>
         </div>
     );
