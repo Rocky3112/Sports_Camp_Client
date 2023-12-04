@@ -12,7 +12,7 @@ import useSelect from "../../Hooks/useSelect";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const [select] = useSelect();
-  console.log(user);
+  // console.log(user);
   const [isAdmin] = useAdmin()
   const handleLogOut = () => {
     logOut()
@@ -21,7 +21,7 @@ const Navbar = () => {
   };
   return (
     <div>
-      <div className="navbar fixed bg-opacity-50 z-10 font-semibold text-white bg-black max-w-screen-xl mx-auto">
+      <div className="navbar fixed bg-opacity-50 z-10 font-semibold text-white bg-black  mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -66,7 +66,7 @@ const Navbar = () => {
                 <FaShoppingCart></FaShoppingCart>
                 <div className="badge badge-secondary px-2">+{select?.length || 0}</div>
              
-            </Link>
+               </Link>
               {user ? (
                 <>
                   <img className=" h-10 rounded-full mx-2" src={user?.photoURL} alt="" />
@@ -107,12 +107,19 @@ const Navbar = () => {
               <Link to='/dashboard/userhome' >Dashboard</Link>
             </li>
               }
-               <Link to="/dashboard/selectedClasses">
+               {
+                user? (
+                  <Link to="/dashboard/selectedClasses">
                 
                 <FaShoppingCart></FaShoppingCart>
                 <div className="badge badge-secondary">+{select?.length || 0}</div>
              
             </Link>
+                ):
+                (
+                  ''
+                )
+               }
               {user ? (
                 <>
                   <img className=" h-10 rounded-full mx-2" src={user?.photoURL} alt="" />

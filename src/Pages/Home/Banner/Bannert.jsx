@@ -12,7 +12,7 @@ const Bannert = () => {
       <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
-          <figure className="px-10 pt-10">
+          <figure className=" pt-10">
             <img src={image1} className="rounded-xl h-[700px] w-full" />
           </figure>
           <div className="card-body items-center text-center">

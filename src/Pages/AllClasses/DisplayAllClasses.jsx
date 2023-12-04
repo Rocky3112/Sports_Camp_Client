@@ -7,7 +7,7 @@ import useSelect from "../../Hooks/useSelect";
 import Swal from "sweetalert2";
 
 const DisplayAllClasses = ({cls}) => {
-    console.log(cls);
+    // console.log(cls);
     const { name, image, phone, email, details,instructor,seats,price,_id } = cls;
     // const {name, image,price,recipe,_id } = cls;
     const {user} =useContext(AuthContext);
@@ -15,8 +15,9 @@ const DisplayAllClasses = ({cls}) => {
     const location = useLocation();
     const [, refetch]=useSelect();
 
+    // eslint-disable-next-line no-unused-vars
     const handleAddToSelectClasses = cls =>{
-      console.log(cls);
+      // console.log(cls);
       if(user && user.email){
         const selectClass ={selectClassId: _id, name,price,image, email:user.email}
         fetch('http://localhost:5000/selects',{

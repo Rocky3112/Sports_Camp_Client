@@ -1,5 +1,7 @@
 import { useQuery } from "react-query";
 
+// import { useQuery } from "@tanstack/react-query";
+
 const useInstractors = () => {
     const {data: instractors = [], isLoading: loading, refetch} = useQuery({
         queryKey: ['classes'],

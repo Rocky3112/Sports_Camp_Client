@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { AuthContext } from '../Providers/AuthProvider';
 import useAxios from './useAxios';
+// import { useQuery } from '@tanstack/react-query';
 import { useQuery } from 'react-query';
 const useSelect = () => {
     const { user, loading } = useContext(AuthContext);

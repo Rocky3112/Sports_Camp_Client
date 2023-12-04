@@ -9,7 +9,7 @@ import PreviousCamp from "../PreviousCamp/PreviousCamp";
 
 const Home = () => {
     return (
-        <div>
+        <div className="px-10">
             {/* <Banner></Banner> */}
             <Bannert></Bannert>
             <PreviousCamp></PreviousCamp>
