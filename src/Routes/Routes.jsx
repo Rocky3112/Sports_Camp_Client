@@ -14,6 +14,9 @@ import UserHome from "../Pages/Dashboard/UserHome/UserHome";
 import SelectedClasses from "../Pages/Dashboard/SelectedClasses/SelectedClasses";
 import ErrorPage from "../Layout/ErrorPage";
 import Payment from "../Pages/Dashboard/PaymentInfo/Payment";
+import EnrolledClasses from "../Pages/Dashboard/EnrolledClasses/EnrolledClasses";
+import TotalPaymentsInfo from "../Pages/Dashboard/TotalPaymentsInfo/TotalPaymentsInfo";
+
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +60,14 @@ export const router = createBrowserRouter([
         element: <UserHome></UserHome>
       },
       {
+        path: "enrolled",
+        element: <EnrolledClasses></EnrolledClasses>
+      },
+      {
+        path: "payment",
+        element: <Payment></Payment>
+      },
+      {
         path: "adminhome",
         element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
       },
@@ -65,8 +76,8 @@ export const router = createBrowserRouter([
         element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
       },
       {
-        path: "payment",
-        element: <Payment></Payment>
+        path: "totalPaymentsInfo",
+        element: <AdminRoute><TotalPaymentsInfo></TotalPaymentsInfo></AdminRoute>
       },
     ]
   }

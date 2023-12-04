@@ -38,8 +38,8 @@ const Dashboard = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/dashboard/manageClasses">
-                     <FaUser></FaUser>Manage Classes
+                  <NavLink to="/dashboard/totalPaymentsInfo">
+                     <FaUser></FaUser>TotalPaymentsInfo
                   </NavLink>
                 </li>
                 <li>
@@ -61,7 +61,7 @@ const Dashboard = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/">
+                  <NavLink to="/dashboard/enrolled">
                    <FaMoneyCheckAlt></FaMoneyCheckAlt>Enrolled Classes
                   </NavLink>
                 </li>

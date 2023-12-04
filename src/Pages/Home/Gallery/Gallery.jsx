@@ -24,6 +24,25 @@ const Gallery = () => {
             <img className="transition-transform duration-300 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic8} alt="" />
         </div>
         </div>
+        <div className="py-3">
+        <div className="mapouter">
+          <div className="gmap_canvas">
+            <iframe
+              className="gmap_iframe"
+              width="100%"
+              frameBorder="0"
+              scrolling="no"
+              marginHeight="0"
+              marginWidth="0"
+              src="https://maps.google.com/maps?q=24.3636,88.6241&hl=en&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+            ></iframe>
+            <a href="https://connectionsgame.org/">Connections NYT</a>
+          </div>
+          <style>
+            {`.mapouter{position:relative;text-align:right;width:100%;height:559px;}.gmap_canvas{overflow:hidden;background:none!important;width:100%;height:559px;}.gmap_iframe{height:559px!important;}`}
+          </style>
+        </div>
+      </div>
         </div>
     );
 };
