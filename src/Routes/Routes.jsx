@@ -10,7 +10,7 @@ import Dashboard from "../Layout/Dashboard";
 import AdminRoute from "./AdminRoute";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
-import UserHome from "../Pages/Dashboard/UserHome/UserHome";
+// import UserHome from "../Pages/Dashboard/UserHome/UserHome";
 import SelectedClasses from "../Pages/Dashboard/SelectedClasses/SelectedClasses";
 import ErrorPage from "../Layout/ErrorPage";
 import Payment from "../Pages/Dashboard/PaymentInfo/Payment";
@@ -55,10 +55,10 @@ export const router = createBrowserRouter([
         path: "selectedClasses",
         element: <SelectedClasses></SelectedClasses>
       },
-      {
-        path: "userhome",
-        element: <UserHome></UserHome>
-      },
+      // {
+      //   path: "userhome",
+      //   element: <UserHome></UserHome>
+      // },
       {
         path: "enrolled",
         element: <EnrolledClasses></EnrolledClasses>

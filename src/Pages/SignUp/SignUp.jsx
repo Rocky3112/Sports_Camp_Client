@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Providers/AuthProvider";
-import signup from '../../assets/signup.gif'
+// import signup from '../../assets/signup.gif'
 import SocialLogin from "../../components/SocialLogin/SocialLogin";
 // import { updateProfile } from "firebase/auth";
 
@@ -77,8 +77,8 @@ const SignUp = () => {
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center md:w-1/2 lg:text-left">
-            <h1 className="text-5xl font-bold">Sign up now!</h1>
-            <img src={signup} alt="" />
+            {/* <h1 className="text-5xl font-bold">Sign up now!</h1> */}
+            {/* <img src={signup} alt="" /> */}
           </div>
           <div className=" md:w-1/2card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">

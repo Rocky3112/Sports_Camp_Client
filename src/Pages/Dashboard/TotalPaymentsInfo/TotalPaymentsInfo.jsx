@@ -5,14 +5,14 @@ import {  useEffect, useState } from "react";
 const TotalPaymentsInfo = () => {
 
     // const {user} = useContext(AuthContext);
-    const [enroll, setEnroll] = useState([]);
-    console.log(enroll);
+    const [payment, setPayment] = useState([]);
+    console.log(payment);
 
     useEffect(()=>{
         fetch(`http://localhost:5000/payments`)
         .then(res=>res.json())
         .then(data=>{
-            setEnroll(data)
+            setPayment(data)
             // console.log(data);
         })
     },[])
@@ -35,7 +35,7 @@ const TotalPaymentsInfo = () => {
                     </thead>
                     <tbody>
                         {
-                            enroll.map((user, index) => <tr key={user._id}>
+                            payment.map((user, index) => <tr key={user._id}>
                                 <th>{index + 1}</th>
                                 <td>{user.email}</td>
                                 <td>{user.transactionId}</td>

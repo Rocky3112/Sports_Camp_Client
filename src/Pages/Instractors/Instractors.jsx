@@ -4,7 +4,7 @@ import DisplayInstractors from "../Home/InstractorsPage/DisplayInstractors";
 const Instractors = () => {
     const [instractors]= useInstractors()
     return (
-        <div className=" grid md:grid-cols-3 gap-4">
+        <div className=" grid md:grid-cols-3 gap-4 px-5">
         {
             instractors.map(item =><DisplayInstractors
             key ={item._id}

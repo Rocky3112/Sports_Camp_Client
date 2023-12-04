@@ -18,7 +18,7 @@ const InstractorsPage = () => {
 
         </section>
 
-        <div className=" grid md:grid-cols-3 gap-4">
+        <div className=" grid md:grid-cols-3 gap-3">
             {
                 popular.map(item =><DisplayInstractors
                 key ={item._id}

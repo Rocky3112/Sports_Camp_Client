@@ -42,7 +42,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
             >
              <li>
                 <Link to="/">Home</Link>
@@ -58,15 +58,22 @@ const Navbar = () => {
                 <Link to='/dashboard/adminhome'>Dashboard</Link>
               </li> :
               <li>
-              <Link to='/dashboard/userhome' >Dashboard</Link>
+              <Link to='/dashboard/selectedClasses' >Dashboard</Link>
             </li>
               }
-               <Link to="/dashboard/selectedClasses">
+               {
+                user && !isAdmin? (
+                  <Link to="/dashboard/selectedClasses">
                 
                 <FaShoppingCart></FaShoppingCart>
-                <div className="badge badge-secondary px-2">+{select?.length || 0}</div>
+                <div className="badge badge-secondary">+{select?.length || 0}</div>
              
-               </Link>
+            </Link>
+                ):
+                (
+                  ''
+                )
+               }
               {user ? (
                 <>
                   <img className=" h-10 rounded-full mx-2" src={user?.photoURL} alt="" />
@@ -104,11 +111,11 @@ const Navbar = () => {
                 <Link to='/dashboard/adminhome'>Dashboard</Link>
               </li> :
               <li>
-              <Link to='/dashboard/userhome' >Dashboard</Link>
+              <Link to='/dashboard/selectedClasses' >Dashboard</Link>
             </li>
               }
                {
-                user? (
+                user && !isAdmin? (
                   <Link to="/dashboard/selectedClasses">
                 
                 <FaShoppingCart></FaShoppingCart>
@@ -138,7 +145,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-outline border-white text-white hover:bg-white hover:text-black">Button</a>
+          <a className="btn btn-outline border-white text-white hover:bg-white hover:text-black">Blog</a>
         </div>
       </div>
     </div>

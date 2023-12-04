@@ -72,7 +72,7 @@ else{
             <h2>{phone}</h2>
             <h2 className="text-2xl text-slate-900 font-semibold">Instractor Name {instructor}</h2>
             <div className="flex text-lg text-orange-700 font-semibold">
-                <p>Available seats : {seats}</p>
+                {/* <p>Available seats : {seats}</p> */}
                 <p>Course Fee : {price}</p>
             </div>
             <button onClick={ ()=>handleAddToSelectClasses(cls)} className="btn btn-outline ">Select Now</button>

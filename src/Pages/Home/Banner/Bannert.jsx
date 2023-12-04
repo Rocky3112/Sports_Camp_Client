@@ -9,11 +9,11 @@ import image6 from '../../../assets/images/image6.jpeg'
 const Bannert = () => {
   return (
     <>
-      <div className="carousel w-full">
-        <div id="item1" className="carousel-item w-full">
+      <div className="carousel w-full lg:h-full h-[600px]">
+        <div id="item1" className="carousel-item w-full ">
         <div className="card w-full bg-base-100 shadow-xl">
           <figure className=" pt-10">
-            <img src={image1} className="rounded-xl h-[700px] w-full" />
+            <img src={image1} className="rounded-xl lg:h-[700px] h-[400px] w-full" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">River Rowing</h2>

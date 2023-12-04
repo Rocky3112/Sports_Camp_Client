@@ -24,8 +24,8 @@ const Gallery = () => {
             <img className="transition-transform duration-300 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic8} alt="" />
         </div>
         </div>
-        <div className="py-3">
-        <div className="mapouter">
+        <div className="py-3 ">
+        <div className="mapouter ">
           <div className="gmap_canvas">
             <iframe
               className="gmap_iframe"
