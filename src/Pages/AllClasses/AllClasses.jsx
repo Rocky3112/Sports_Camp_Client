@@ -15,7 +15,7 @@ const AllClasses = () => {
 
   return (
     <div>
-      <section className="my-10">
+      <section className="">
         {/* Add a button to toggle between showing all and first 6 */}
         
       </section>

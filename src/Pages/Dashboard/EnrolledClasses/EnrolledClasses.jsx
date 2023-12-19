@@ -9,7 +9,7 @@ const EnrolledClasses = () => {
     console.log(enroll);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/payments?email=${user?.email}`)
+        fetch(`https://sports-camp-server-lemon.vercel.app/payments?email=${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 const filteredData = data.filter(item => item.email === user?.email);

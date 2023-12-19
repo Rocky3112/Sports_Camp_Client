@@ -9,7 +9,7 @@ const TotalPaymentsInfo = () => {
     console.log(payment);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/payments`)
+        fetch(`https://sports-camp-server-lemon.vercel.app/payments`)
         .then(res=>res.json())
         .then(data=>{
             setPayment(data)
