@@ -92,7 +92,7 @@ const Navbar = () => {
             </ul>
           </div>
           <a className="btn btn-ghost text-3xl">
-            Sports <span className=" text-orange-500">Camp</span>
+            Sports <span className=" text-orange-500">Academy</span>
           </a>
         </div>
         <div className="navbar-center hidden lg:flex ">

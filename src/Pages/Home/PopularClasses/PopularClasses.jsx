@@ -31,7 +31,7 @@ const PopularClasses = () => {
         </div>
         <div className="text-center">
         <Link to ='/allClasses'>
-        <button  className="uppercase btn btn-outline my-3 border-0 border-b-2  mx-auto">View All Classes</button>
+        <button  className="uppercase btn bg-slate-800 hover:bg-amber-600 text-white my-3 border-0 border-b-2  mx-auto">View All Classes</button>
         </Link>
         </div>
     

@@ -1,6 +1,7 @@
 // import Banner from "../Banner/Banner";
 import Bannert from "../Banner/Bannert";
 import Contact from "../Contact/Contact";
+import Experienced from "../ExtraSection/Experienced";
 import Gallery from "../Gallery/Gallery";
 import GuideLine from "../GuideLine/GuideLine";
 import InstractorsPage from "../InstractorsPage/InstractorsPage";
@@ -14,10 +15,12 @@ const Home = () => {
             <Bannert></Bannert>
             <div className="lg:px-12 ">
             <PreviousCamp></PreviousCamp>
+            <Experienced></Experienced>
             <PopularClasses></PopularClasses>
             <InstractorsPage></InstractorsPage>
             <GuideLine></GuideLine>
             <Gallery></Gallery>
+            
             <Contact></Contact>
             </div>
         </div>

@@ -9,7 +9,7 @@ const DisplayInstractors = ({item}) => {
       <Zoom duration={2000}>
       <div className="card card-compact w-96 bg-base-100 shadow-xl  h-[400px] p-4">
         <figure>
-          <img className="rounded-xl"
+          <img className="rounded-xl w-full hover:scale-110 h-72 p-3 duration-1000"
             src={image}
           />
         </figure>

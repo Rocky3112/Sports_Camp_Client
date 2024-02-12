@@ -7,6 +7,7 @@ import pic6 from '../../../assets/images/keyekingjpg.jpg'
 import pic7 from '../../../assets/images/Mountain.jpeg'
 import pic8 from '../../../assets/images/img-3.webp'
 import PartTitle from '../../../components/PartTitle/PartTitle'
+import Partnarship from '../ExtraSection/Partnarship'
 
 const Gallery = () => {
     return (
@@ -14,15 +15,16 @@ const Gallery = () => {
             <div className="my-20 mx-10">
            <PartTitle heading={'Photo Gallery'}></PartTitle>
             <div className=" relative  grid lg:grid-cols-4 sm:grid-cols-1 gap-7 justify-between"> 
-            <img className="transition-transform duration-300 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic1} alt="" />
-            <img className="transition-transform duration-300 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic2} alt="" />
-            <img className="transition-transform duration-300 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic3} alt="" />
-            <img className="transition-transform duration-300 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic4} alt="" />
-            <img className="transition-transform duration-300 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic5} alt="" />
-            <img className="transition-transform duration-300 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic6} alt="" />
-            <img className="transition-transform duration-300 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic7} alt="" />
-            <img className="transition-transform duration-300 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic8} alt="" />
+            <img className="transition-transform duration-1000 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic1} alt="" />
+            <img className="transition-transform duration-1000 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic2} alt="" />
+            <img className="transition-transform duration-1000 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic3} alt="" />
+            <img className="transition-transform duration-1000 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic4} alt="" />
+            <img className="transition-transform duration-1000 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic5} alt="" />
+            <img className="transition-transform duration-1000 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic6} alt="" />
+            <img className="transition-transform duration-1000 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic7} alt="" />
+            <img className="transition-transform duration-1000 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic8} alt="" />
         </div>
+        <Partnarship></Partnarship>
         </div>
         <div className="py-3 ">
         <div className="mapouter ">
