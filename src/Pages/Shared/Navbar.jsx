@@ -1,10 +1,12 @@
 
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import useAdmin from "../../Hooks/useAdmin";
 import { FaShoppingCart } from "react-icons/fa";
 import useSelect from "../../Hooks/useSelect";
+import ActiveLink from "./ActiveLink";
+import { Link } from "react-router-dom";
 
 // import { FaShoppingCart } from 'react-icons/fa';
 
@@ -44,31 +46,28 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
             >
-             <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/instractors">Instractors</Link>
-              </li>
-              <li>
-                <Link to="/allClasses">All Classes</Link>
-              </li>
-              {
-                isAdmin ? <li>
-                <Link to='/dashboard/adminhome'>Dashboard</Link>
-              </li> :
-              <li>
-              <Link to='/dashboard/selectedClasses' >Dashboard</Link>
-            </li>
-              }
+             <ActiveLink to="/">Home</ActiveLink>
+              
+              <ActiveLink to="/instractors">Instractors</ActiveLink>
+            
+              <ActiveLink to="/allClasses">All Classes</ActiveLink>
+           
+            {
+              isAdmin ? (
+              <ActiveLink to='/dashboard/adminhome'>Dashboard</ActiveLink>)
+             :
+           (
+            <ActiveLink to='/dashboard/selectedClasses' >Dashboard</ActiveLink>)
+          
+            }
                {
                 user && !isAdmin? (
-                  <Link to="/dashboard/selectedClasses">
+                  <ActiveLink to="/dashboard/selectedClasses">
                 
                 <FaShoppingCart></FaShoppingCart>
                 <div className="badge badge-secondary">+{select?.length || 0}</div>
              
-            </Link>
+            </ActiveLink>
                 ):
                 (
                   ''
@@ -83,45 +82,43 @@ const Navbar = () => {
                 </>
               ) : (
                 <>
-                  <li>
-                    <Link to="login">Login</Link>
-                  </li>
+                  
+                    <ActiveLink to="login">Login</ActiveLink>
+                  
                 </>
               )}
             
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl">
+          <Link className="btn btn-ghost text-3xl">
             Sports <span className=" text-orange-500">Academy</span>
-          </a>
+          </Link>
         </div>
-        <div className="navbar-center hidden lg:flex ">
-          <ul className="menu menu-horizontal px-1 text-base">
-          <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/instractors">Instractors</Link>
-              </li>
-              <li>
-                <Link to="/allClasses">All Classes</Link>
-              </li>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu font-monster menu-horizontal px-1 hidden lg:flex md:flex text-base items-center">
+          
+                <ActiveLink className='' to="/">Home</ActiveLink>
+              
+                <ActiveLink to="/instractors">Instractors</ActiveLink>
+              
+                <ActiveLink to="/allClasses">All Classes</ActiveLink>
+             
               {
-                isAdmin ? <li>
-                <Link to='/dashboard/adminhome'>Dashboard</Link>
-              </li> :
-              <li>
-              <Link to='/dashboard/selectedClasses' >Dashboard</Link>
-            </li>
+                isAdmin ? (
+                <ActiveLink to='/dashboard/adminhome'>Dashboard</ActiveLink>)
+               :
+             (
+              <ActiveLink to='/dashboard/selectedClasses' >Dashboard</ActiveLink>)
+            
               }
                {
                 user && !isAdmin? (
-                  <Link to="/dashboard/selectedClasses">
+                  <ActiveLink to="/dashboard/selectedClasses">
                 
                 <FaShoppingCart></FaShoppingCart>
                 <div className="badge badge-secondary">+{select?.length || 0}</div>
              
-            </Link>
+            </ActiveLink>
                 ):
                 (
                   ''
@@ -136,9 +133,9 @@ const Navbar = () => {
                 </>
               ) : (
                 <>
-                  <li>
-                    <Link to="login">Login</Link>
-                  </li>
+                 
+                    <ActiveLink to="login">Login</ActiveLink>
+                  
                 </>
               )}
             

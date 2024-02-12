@@ -11,7 +11,7 @@ const Experienced = () => {
 
                 <div className='lg:mt-[25vh] w-1/2'>
                     <p className='text-[#CDB30C] uppercase text-sm font-medium'>welcome to Sport Academy</p>
-                    <h2 className='py-4 lg:text-4xl md:text-4xl sm:text-4xl text-2xl font-bold lg:w-[60%] leading-snug'>HIGHEST CREATIVE STANDARDS</h2>
+                    <h2 className='py-4 lg:text-4xl md:text-4xl sm:text-4xl text-2xl font-bold lg:w-[70%] leading-snug text-amber-600'>HIGHEST CREATIVE STANDARDS</h2>
                     <p className='leading-7 text-[#5c5c5c]'>
                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
                     </p>
