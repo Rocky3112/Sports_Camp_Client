@@ -9,15 +9,17 @@ import PreviousCamp from "../PreviousCamp/PreviousCamp";
 
 const Home = () => {
     return (
-        <div className="px-10">
+        <div className="">
             {/* <Banner></Banner> */}
             <Bannert></Bannert>
+            <div className="lg:px-12 ">
             <PreviousCamp></PreviousCamp>
             <PopularClasses></PopularClasses>
             <InstractorsPage></InstractorsPage>
             <GuideLine></GuideLine>
             <Gallery></Gallery>
             <Contact></Contact>
+            </div>
         </div>
     );
 };

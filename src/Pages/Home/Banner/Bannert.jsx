@@ -9,11 +9,11 @@ import image6 from '../../../assets/images/image6.jpeg'
 const Bannert = () => {
   return (
     <>
-      <div className="carousel w-full lg:h-full h-[600px]">
+      <div className="carousel w-full lg:h-[700px] h-[600px] shadow-xl">
         <div id="item1" className="carousel-item w-full ">
-        <div className="card w-full bg-base-100 shadow-xl">
-          <figure className=" pt-10">
-            <img src={image1} className="rounded-xl lg:h-[700px] h-[400px] w-full" />
+        <div className="card rounded-none w-full bg-base-100 ">
+          <figure className="">
+            <img src={image1} className=" lg:h-[700px] h-[400px] w-full" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">River Rowing</h2>
@@ -26,8 +26,8 @@ const Bannert = () => {
         </div>
         <div id="item2" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
-          <figure className="px-10 pt-10">
-            <img src={image2} className="rounded-xl h-[700px] w-full" />
+          <figure className="">
+            <img src={image2} className=" lg:h-[700px] h-[400px] w-full" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Football Academy</h2>
@@ -40,8 +40,8 @@ const Bannert = () => {
         </div>
         <div id="item3" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
-          <figure className="px-10 pt-10">
-            <img src={image3} className="rounded-xl h-[700px] w-full" />
+          <figure className="">
+            <img src={image3} className="lg:h-[700px] h-[400px] w-full" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Swimming Camp</h2>
@@ -54,8 +54,8 @@ const Bannert = () => {
         </div>
         <div id="item4" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
-          <figure className="px-10 pt-10">
-            <img src={image4} className="rounded-xl h-[700px] w-full" />
+          <figure className="">
+            <img src={image4} className="lg:h-[700px] h-[400px] w-full" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Volly </h2>
@@ -68,8 +68,8 @@ const Bannert = () => {
         </div>
         <div id="item5" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
-          <figure className="px-10 pt-10">
-            <img src={image5} className="rounded-xl h-[700px] w-full" />
+          <figure className="">
+            <img src={image5} className="lg:h-[700px] h-[400px]w-full" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Basket Ball</h2>
@@ -82,8 +82,8 @@ const Bannert = () => {
         </div>
         <div id="item6" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
-          <figure className="px-10 pt-10">
-            <img src={image6} className="rounded-xl h-[700px] w-full" />
+          <figure className="">
+            <img src={image6} className="lg:h-[700px] h-[400px]w-full" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Swimming</h2>
@@ -95,7 +95,7 @@ const Bannert = () => {
          
         </div>
       </div>
-      <div className="flex justify-center w-full py-2 gap-2">
+      <div className="flex justify-center w-full py-2 gap-2 absolute bottom-8">
       <a href="#item1" className="btn btn-xs">1</a>
       <a href="#item2" className="btn btn-xs">2</a>
       <a href="#item3" className="btn btn-xs">3</a>

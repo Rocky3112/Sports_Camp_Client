@@ -102,8 +102,8 @@ const Banner = () => {
     <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
-          <figure className="px-10 pt-10">
-            <img src={image1} className="rounded-xl" />
+          <figure className="">
+            <img src={image1} className="" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Shoes!</h2>
@@ -120,7 +120,7 @@ const Banner = () => {
         <div id="item2" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
           <figure className="px-10 pt-10">
-            <img src={image2} className="rounded-xl" />
+            <img src={image2} className="" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Shoes!</h2>
@@ -137,7 +137,7 @@ const Banner = () => {
         <div id="item3" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
           <figure className="px-10 pt-10">
-            <img src={image3} className="rounded-xl" />
+            <img src={image3} className="" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Shoes!</h2>
@@ -154,7 +154,7 @@ const Banner = () => {
         <div id="item4" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
           <figure className="px-10 pt-10">
-            <img src={image4} className="rounded-xl" />
+            <img src={image4} className="" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Shoes!</h2>
@@ -171,7 +171,7 @@ const Banner = () => {
         <div id="item5" className="carousel-item w-full">
         <div className="card w-full bg-base-100 shadow-xl">
           <figure className="px-10 pt-10">
-            <img src={image5} className="rounded-xl" />
+            <img src={image5} className="" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Shoes!</h2>
