@@ -8,6 +8,8 @@ import pic7 from '../../../assets/images/Mountain.jpeg'
 import pic8 from '../../../assets/images/img-3.webp'
 import PartTitle from '../../../components/PartTitle/PartTitle'
 import Partnarship from '../ExtraSection/Partnarship'
+import Review from '../ExtraSection/Review'
+// import Review from '../ExtraSection/Review'
 
 const Gallery = () => {
     return (
@@ -25,6 +27,7 @@ const Gallery = () => {
             <img className="transition-transform duration-1000 w-full lg:w-64 lg:h-64 hover:scale-110 rounded-lg" src={pic8} alt="" />
         </div>
         <Partnarship></Partnarship>
+        <Review></Review>
         </div>
         <div className="py-3 ">
         <div className="mapouter ">
