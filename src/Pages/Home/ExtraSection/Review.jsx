@@ -3,7 +3,6 @@ import { Slide, Fade } from "react-awesome-reveal";
 import { Navigation, Pagination, History } from 'swiper/modules';
 import 'swiper/swiper-bundle.css'; // Import Swiper styles
 import { useEffect, useState } from 'react';
-import Rating from 'react-rating';
 import RatingStar from './RatingStar';
 
 const Review = () => {

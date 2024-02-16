@@ -5,7 +5,7 @@ import { Zoom } from "react-awesome-reveal";
 const DisplayInstractors = ({item}) => {
     const { name, image, email, } = item;
   return (
-    <div className="">
+    <div className=" lg:pt-20 pt-7">
       <Zoom duration={2000}>
       <div className="card card-compact w-96 bg-base-100 shadow-xl  h-[400px] p-4">
         <figure>

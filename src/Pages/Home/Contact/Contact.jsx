@@ -1,15 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import { Fade, Zoom } from 'react-awesome-reveal';
 import Lottie from "lottie-react";
-import contact from '../../../../public/contact.json'
+import  contact  from '../../../../public/contact.json'
 import PartTitle from '../../../components/PartTitle/PartTitle';
 
 const Contact = () => {
     const form = useRef();
+    const [Contact, setContact] = useState();
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -21,6 +22,12 @@ const Contact = () => {
                 
             });
     }
+
+    useEffect(()=>{
+        fetch('contact.json')
+        .then(res=>res.json())
+        .then(data=> setContact(data))
+    },[])
     return (
         <div id='contactMe' className='mt-20 mb-10'>
             <div className=" min-h-screen">
@@ -35,7 +42,7 @@ const Contact = () => {
                     <div data-aos="fade-right" className="w-full max-w-xl p-5 rounded-xl ">
                         
                         <div className='sm:p-10 md:p-0 lg:p-2 '>
-                            <Lottie animationData={contact} loop={true} className='h-[650px]' />
+                            <Lottie animationData={Contact} loop={true} className='h-[650px]' />
                         </div>
 
                         {/* <Fade direction='left' className=' ps-28'>

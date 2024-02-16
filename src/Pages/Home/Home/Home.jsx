@@ -1,4 +1,5 @@
 // import Banner from "../Banner/Banner";
+import { useEffect } from "react";
 import Bannert from "../Banner/Bannert";
 import Contact from "../Contact/Contact";
 import Experienced from "../ExtraSection/Experienced";
@@ -9,6 +10,9 @@ import PopularClasses from "../PopularClasses/PopularClasses";
 import PreviousCamp from "../PreviousCamp/PreviousCamp";
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0,0);   
+    },[])
     return (
         <div className="">
             {/* <Banner></Banner> */}

@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useClasses from "../../Hooks/useClasses";
 import DisplayAllClasses from "./DisplayAllClasses";
 
 const AllClasses = () => {
   const [classes] = useClasses();
   const [showAll, setShowAll] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0,0);   
+},[])
 
   // Slice the first 6 classes when not showing all
   const displayedClasses = showAll ? classes : classes.slice(0, 6);
@@ -15,7 +18,7 @@ const AllClasses = () => {
 
   return (
     <div>
-      <section className="">
+      <section className="lg:pt-20 pt-7">
         {/* Add a button to toggle between showing all and first 6 */}
         
       </section>

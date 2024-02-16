@@ -6,7 +6,7 @@ const DisplayPopular = ({ item }) => {
   // console.log(item);
   const { name, image, phone, email, details } = item;
   return (
-    <div className="">
+    <div className="lg:pt-20 pt-7">
       <Zoom duration={2000}>
       <div className="card card-compact w-96 bg-base-100 shadow-xl  h-[420px] p-4">
         <figure className="rounded-xl ">
